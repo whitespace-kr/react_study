@@ -5,7 +5,7 @@ class Counter extends Component {
         super(props);
         this.state = {
             number: 0,
-            fixedNumber: 0
+            fixedNumber: 5
         };
     }
     render(){
@@ -21,6 +21,7 @@ class Counter extends Component {
                             number:number+1
                         }, () => {
                             console.log(this.state);
+                            console.log(fixedNumber);
                         }
                     );
                 }}
@@ -33,3 +34,4 @@ class Counter extends Component {
 }
 
 export default Counter;
+
